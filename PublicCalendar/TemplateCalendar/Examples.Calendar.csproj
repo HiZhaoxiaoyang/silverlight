@@ -1,0 +1,109 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.3077</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A42293CE-56EB-4CED-A222-1F2381382167}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Examples.Calendar</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <Name>System.Core</Name>
+    </Reference>
+    <Reference Include="System.Data.Services.Client">
+      <Name>System.Data.Services.Client</Name>
+    </Reference>
+    <Reference Include="System.Windows">
+      <Name>System.Windows</Name>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls">
+      <Name>Telerik.Windows.Controls</Name>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Input">
+      <Name>Telerik.Windows.Controls.Input</Name>
+    </Reference>
+    <Reference Include="Telerik.Windows.QuickStart">
+      <Name>Telerik.Windows.QuickStart</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Examples\Calendar\CS\TimeListService\TimeList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Examples\Calendar\CS\TimeListService\TimeListDateService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Telerik\Windows\Examples\Examples\Calendar\DataBinding\Example.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Telerik\Windows\Examples\Examples\Calendar\DatePicker\Example.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Telerik\Windows\Examples\Examples\Calendar\Events\Example.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Telerik\Windows\Examples\Examples\Calendar\FirstLook\DisableWeekendsSelection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Telerik\Windows\Examples\Examples\Calendar\FirstLook\Example.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Telerik\Windows\Examples\Examples\Calendar\SelectionRangeConstraints\DisableWeekendsSelection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Telerik\Windows\Examples\Examples\Calendar\SelectionRangeConstraints\Example.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Examples.Calendar.g.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

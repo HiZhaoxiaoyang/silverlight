@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_UtilitiesCalendar" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_UtilitiesCalendar"
+                contract="WCFServ.UtilitiesCalendar" name="BasicHttpBinding_UtilitiesCalendar" />
+        </client>
+    </system.serviceModel>
+</configuration>

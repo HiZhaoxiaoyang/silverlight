@@ -1,0 +1,67 @@
+﻿<UserControl xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"  x:Class="PublicCalendar.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:tk="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+	xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls" 
+	xmlns:my="clr-namespace:PublicCalendar"
+    Width="1024" Height="768" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:PublicCalendar="clr-namespace:PublicCalendar" xmlns:basics="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls">
+    <!--xmlns:my="clr-namespace:Telerik.Windows.Examples.Examples.Calendar.FirstLook;assembly=Examples.Calendar"-->
+    <Grid x:Name="LayoutRoot" Background="{x:Null}" telerik:StyleManager.Theme="Vista">
+    	<Image Margin="0,0,-416,-672" x:Name="bgRadBlue" Source="assets/radBlue.jpg" Stretch="Fill"/>
+    	<TextBlock x:Name="tb" Height="35" Margin="31,15.834,495,0" VerticalAlignment="Top" FontFamily="Myriad Web" FontSize="30" Foreground="#FFFFFFFF" Text="Public Canlendar Control"/>
+    	<data:DataGrid x:Name="dg" Height="126" Margin="23,515.5,37,126.5" d:LayoutOverrides="VerticalAlignment"/>
+    	<!--<PublicCalendar:CurDate Margin="24.91,115,0,0" Height="205" HorizontalAlignment="Left" VerticalAlignment="Top" Width="207"/>-->
+    	<Rectangle Height="70" HorizontalAlignment="Right" Margin="0,-22,144,0" VerticalAlignment="Top" Width="239" RadiusX="12" RadiusY="12" Stroke="#FF00E9FF">
+    		<Rectangle.Fill>
+    			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    				<GradientStop Color="#4C003366" Offset="0"/>
+    				<GradientStop Color="#4C0099CC" Offset="1"/>
+    			</LinearGradientBrush>
+    		</Rectangle.Fill>
+    	</Rectangle>
+    	<ComboBox Height="27" telerik:StyleManager.Theme="Vista" HorizontalAlignment="Right" Margin="0,13,216,0" VerticalAlignment="Top" Width="145" x:Name="countryCode" FontFamily="Myriad Web" Loaded="countryCode_Loaded"/>
+    	
+    	<tk:RadCalendar x:Name="tkCalendar"
+    	 telerik:StyleManager.Theme="Summer"
+    	 Loaded="tkCalendar_Loaded" 
+    	 IsTodayHighlighted="True"
+    	 DayTemplate="{x:Null}"
+    	 Columns="1" DisplayMode="MonthView"
+    	 UseLayoutRounding="True"
+    	 SelectionMode="Extended"
+    	 Margin="246,101,306,302">
+            <tk:RadCalendar.DayTemplateSelector>
+                <my:SpecialHoliday>
+                    <my:SpecialHoliday.DefaultTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Text}" />
+                        </DataTemplate>
+                    </my:SpecialHoliday.DefaultTemplate>
+                    <my:SpecialHoliday.SpecialDay>
+                        <DataTemplate>
+                            <TextBox x:Name="spTB" Text="{Binding Text}" FontWeight="Bold" Foreground="Red" IsHitTestVisible="False">
+                                <TextBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFFFABAB"/>
+                                        <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </TextBox.Background>
+                            </TextBox>
+                        </DataTemplate>
+                    </my:SpecialHoliday.SpecialDay>
+                </my:SpecialHoliday>
+            </tk:RadCalendar.DayTemplateSelector>
+        </tk:RadCalendar>
+    	
+    	<!--<PublicCalendar:Detailer Margin="0,67,-352,168" MouseEnter="Detailer_MouseEnter" MouseLeave="Detailer_MouseLeave"  x:Name="Detailer" HorizontalAlignment="Right" Width="392"/>-->
+    	<tk:RadColorPicker Height="27" HorizontalAlignment="Right" Margin="0,13,159,0" VerticalAlignment="Top" Width="39"/>
+    	<TextBlock x:Name="tb_Copy" Height="28" Margin="25,0,454,257" VerticalAlignment="Bottom" FontFamily="Myriad Web" FontSize="22" Foreground="#FFFFFFFF" Text="Data Log"/>
+    	<PublicCalendar:CurDate x:Name="curDate" Height="200" HorizontalAlignment="Left" Margin="13,101,0,0" VerticalAlignment="Top" Width="217"/>
+    	<PublicCalendar:Detailer x:Name="Detailer" HorizontalAlignment="Right" Margin="0,83.25,-297.5,280.75" Width="327.5"/>
+    	<TextBlock Height="27" Margin="246,63,81.5,0" VerticalAlignment="Top" FontSize="16" Foreground="#FFFFFFFF" Text="TEST INFO" TextWrapping="Wrap" x:Name="testTxt"/>
+    	<tk:RadComboBox Height="27" HorizontalAlignment="Left" Margin="13,63,0,0" VerticalAlignment="Top" Width="217" x:Name="testBox"/>
+    	<basics:Calendar HorizontalAlignment="Left" Margin="23,314,0,285" Width="207" x:Name="interCal"/>
+    	<!--<PublicCalendar:Detailer HorizontalAlignment="Right" Margin="0,115,-251,216" Width="324"/>-->
+    </Grid>
+</UserControl>

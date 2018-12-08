@@ -1,0 +1,16 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="PublicCalendar" EntryPointType="PublicCalendar.App" RuntimeVersion="2.0.31005.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="PublicCalendar" Source="PublicCalendar.dll" />
+    <AssemblyPart x:Name="Examples.Calendar" Source="Examples.Calendar.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data" Source="System.Windows.Controls.Data.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls" Source="Telerik.Windows.Controls.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Input" Source="Telerik.Windows.Controls.Input.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Default_Black" Source="Telerik.Windows.Themes.Default_Black.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Themes.Vista" Source="Telerik.Windows.Themes.Vista.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.QuickStart" Source="Telerik.Windows.QuickStart.dll" />
+    <AssemblyPart x:Name="Telerik.Windows.Controls.Navigation" Source="Telerik.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="System.Data.Services.Client" Source="System.Data.Services.Client.dll" />
+  </Deployment.Parts>
+</Deployment>

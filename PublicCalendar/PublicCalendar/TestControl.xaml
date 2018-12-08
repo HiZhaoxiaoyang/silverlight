@@ -1,0 +1,9 @@
+﻿<UserControl xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"  x:Class="PublicCalendar.TestControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="800" Height="600">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <data:DataGrid x:Name="grid1" Margin="0,36,0,0"></data:DataGrid>
+        <TextBox Height="32" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Text="Total Records:" TextWrapping="Wrap" x:Name="tl"/>
+    </Grid>
+</UserControl>

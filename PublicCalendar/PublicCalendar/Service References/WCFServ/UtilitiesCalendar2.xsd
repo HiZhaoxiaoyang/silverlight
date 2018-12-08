@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfCalendar">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Calendar" nillable="true" type="tns:Calendar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCalendar" nillable="true" type="tns:ArrayOfCalendar" />
+  <xs:complexType name="Calendar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PH" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Calendar" nillable="true" type="tns:Calendar" />
+  <xs:complexType name="ArrayOfDailyOTRate_CN">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DailyOTRate_CN" nillable="true" type="tns:DailyOTRate_CN" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDailyOTRate_CN" nillable="true" type="tns:ArrayOfDailyOTRate_CN" />
+  <xs:complexType name="DailyOTRate_CN">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WorkDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="WeekDay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkHours" type="xs:decimal" />
+      <xs:element minOccurs="0" name="OTRate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HolidayFlag" nillable="true" type="ser:char" />
+      <xs:element minOccurs="0" name="DateStatus" type="ser:char" />
+      <xs:element minOccurs="0" name="Remarks" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DailyOTRate_CN" nillable="true" type="tns:DailyOTRate_CN" />
+  <xs:complexType name="ArrayOfDailyOTRate_HK">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DailyOTRate_HK" nillable="true" type="tns:DailyOTRate_HK" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDailyOTRate_HK" nillable="true" type="tns:ArrayOfDailyOTRate_HK" />
+  <xs:complexType name="DailyOTRate_HK">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WorkDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="WeekDay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkHours" type="xs:decimal" />
+      <xs:element minOccurs="0" name="OTRate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HolidayFlag" nillable="true" type="ser:char" />
+      <xs:element minOccurs="0" name="DateStatus" type="ser:char" />
+      <xs:element minOccurs="0" name="Remarks" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DailyOTRate_HK" nillable="true" type="tns:DailyOTRate_HK" />
+  <xs:complexType name="ArrayOfDailyOTRate_MA">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DailyOTRate_MA" nillable="true" type="tns:DailyOTRate_MA" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDailyOTRate_MA" nillable="true" type="tns:ArrayOfDailyOTRate_MA" />
+  <xs:complexType name="DailyOTRate_MA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="WorkDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="WeekDay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkHours" type="xs:decimal" />
+      <xs:element minOccurs="0" name="OTRate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HolidayFlag" nillable="true" type="ser:char" />
+      <xs:element minOccurs="0" name="DateStatus" type="ser:char" />
+      <xs:element minOccurs="0" name="Remarks" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DailyOTRate_MA" nillable="true" type="tns:DailyOTRate_MA" />
+</xs:schema>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UtilitiesCalendar_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="DoWork" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_GetCalendar_InputMessage">
+    <wsdl:part name="parameters" element="GetCalendar" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_GetCalendar_OutputMessage">
+    <wsdl:part name="parameters" element="GetCalendarResponse" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_UpdatePublicDate_InputMessage">
+    <wsdl:part name="parameters" element="UpdatePublicDate" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_UpdatePublicDate_OutputMessage">
+    <wsdl:part name="parameters" element="UpdatePublicDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_GetDailyCN_InputMessage">
+    <wsdl:part name="parameters" element="GetDailyCN" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_GetDailyCN_OutputMessage">
+    <wsdl:part name="parameters" element="GetDailyCNResponse" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_GetDailyHK_InputMessage">
+    <wsdl:part name="parameters" element="GetDailyHK" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_GetDailyHK_OutputMessage">
+    <wsdl:part name="parameters" element="GetDailyHKResponse" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_GetDailyMA_InputMessage">
+    <wsdl:part name="parameters" element="GetDailyMA" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_GetDailyMA_OutputMessage">
+    <wsdl:part name="parameters" element="GetDailyMAResponse" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_UpdateTable_InputMessage">
+    <wsdl:part name="parameters" element="UpdateTable" />
+  </wsdl:message>
+  <wsdl:message name="UtilitiesCalendar_UpdateTable_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateTableResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UtilitiesCalendar">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="urn:UtilitiesCalendar/DoWork" message="UtilitiesCalendar_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="urn:UtilitiesCalendar/DoWorkResponse" message="UtilitiesCalendar_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <wsdl:input wsaw:Action="urn:UtilitiesCalendar/GetCalendar" message="UtilitiesCalendar_GetCalendar_InputMessage" />
+      <wsdl:output wsaw:Action="urn:UtilitiesCalendar/GetCalendarResponse" message="UtilitiesCalendar_GetCalendar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublicDate">
+      <wsdl:input wsaw:Action="urn:UtilitiesCalendar/UpdatePublicDate" message="UtilitiesCalendar_UpdatePublicDate_InputMessage" />
+      <wsdl:output wsaw:Action="urn:UtilitiesCalendar/UpdatePublicDateResponse" message="UtilitiesCalendar_UpdatePublicDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyCN">
+      <wsdl:input wsaw:Action="urn:UtilitiesCalendar/GetDailyCN" message="UtilitiesCalendar_GetDailyCN_InputMessage" />
+      <wsdl:output wsaw:Action="urn:UtilitiesCalendar/GetDailyCNResponse" message="UtilitiesCalendar_GetDailyCN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyHK">
+      <wsdl:input wsaw:Action="urn:UtilitiesCalendar/GetDailyHK" message="UtilitiesCalendar_GetDailyHK_InputMessage" />
+      <wsdl:output wsaw:Action="urn:UtilitiesCalendar/GetDailyHKResponse" message="UtilitiesCalendar_GetDailyHK_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyMA">
+      <wsdl:input wsaw:Action="urn:UtilitiesCalendar/GetDailyMA" message="UtilitiesCalendar_GetDailyMA_InputMessage" />
+      <wsdl:output wsaw:Action="urn:UtilitiesCalendar/GetDailyMAResponse" message="UtilitiesCalendar_GetDailyMA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTable">
+      <wsdl:input wsaw:Action="urn:UtilitiesCalendar/UpdateTable" message="UtilitiesCalendar_UpdateTable_InputMessage" />
+      <wsdl:output wsaw:Action="urn:UtilitiesCalendar/UpdateTableResponse" message="UtilitiesCalendar_UpdateTable_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

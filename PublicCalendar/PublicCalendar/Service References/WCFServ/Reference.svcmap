@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="37c39805-3999-4028-b2db-8655a6e91407" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UtilitiesCalendar.wsdl" MetadataType="Wsdl" ID="b102e182-ebf9-4626-a4ee-cde4113fc860" SourceId="1" SourceUrl="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?wsdl" />
+    <MetadataFile FileName="UtilitiesCalendar2.xsd" MetadataType="Schema" ID="3a59d452-c622-48e6-a4f9-3d3dcad5c10c" SourceId="1" SourceUrl="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?xsd=xsd2" />
+    <MetadataFile FileName="UtilitiesCalendar.xsd" MetadataType="Schema" ID="ad6a33a0-df14-4cb5-89fb-0a2dee9d588d" SourceId="1" SourceUrl="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?xsd=xsd1" />
+    <MetadataFile FileName="UtilitiesCalendar.disco" MetadataType="Disco" ID="b631146f-b427-47d1-a8d8-091b6be3e4e3" SourceId="1" SourceUrl="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?disco" />
+    <MetadataFile FileName="UtilitiesCalendar1.xsd" MetadataType="Schema" ID="5b0ba6bf-8c89-4b4c-9a50-e0485a48ccac" SourceId="1" SourceUrl="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?xsd=xsd0" />
+    <MetadataFile FileName="UtilitiesCalendar1.wsdl" MetadataType="Wsdl" ID="baa0f38e-78d7-44de-aaa5-e238e6e91c2c" SourceId="1" SourceUrl="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

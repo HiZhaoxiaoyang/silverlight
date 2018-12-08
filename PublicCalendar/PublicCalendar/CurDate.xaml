@@ -1,0 +1,80 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="PublicCalendar.CurDate"
+	d:DesignWidth="207" d:DesignHeight="205">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid>
+			<Rectangle Stroke="{x:Null}" RadiusX="11" RadiusY="11" Margin="4.5,6,-2.5,-6" Opacity="0.5" Fill="#FF000000"/>
+			<Rectangle Stroke="#FF000000" RadiusX="11" RadiusY="11" Margin="0,0,2,0">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FFCCCCCC" Offset="1"/>
+						<GradientStop Color="#FFFFFFFF" Offset="0"/>
+						<GradientStop Color="#FFFBFBFB" Offset="0.844"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Rectangle Margin="2,5,4,5" StrokeThickness="2" RadiusX="11" RadiusY="11">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FF999999"/>
+						<GradientStop Color="#FFFFFFFF" Offset="1"/>
+						<GradientStop Color="#FFFFFFFF" Offset="0.511"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+				<Rectangle.Stroke>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FF646464" Offset="1"/>
+						<GradientStop Color="#FFFFFFFF" Offset="0"/>
+					</LinearGradientBrush>
+				</Rectangle.Stroke>
+			</Rectangle>
+			<Rectangle Height="57" Margin="2,2,4,0" VerticalAlignment="Top" StrokeThickness="2" RadiusX="11" RadiusY="11">
+				<Rectangle.Stroke>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FF0099CC" Offset="1"/>
+						<GradientStop Color="#FFFFFFFF" Offset="0"/>
+					</LinearGradientBrush>
+				</Rectangle.Stroke>
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FF003366" Offset="1"/>
+						<GradientStop Color="#FF0099CC" Offset="0"/>
+						<GradientStop Color="#FF2083B1" Offset="0.298"/>
+						<GradientStop Color="#FF043C6F" Offset="0.844"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<TextBlock OpacityMask="{x:Null}" Margin="27,53,44,28" TextWrapping="Wrap" x:Name="uperT" FontSize="100" Text="19" TextAlignment="Center" >
+				<TextBlock.Foreground>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FFFFFFFF"/>
+						<GradientStop Color="#FF6C6C6C" Offset="1"/>
+					</LinearGradientBrush>
+				</TextBlock.Foreground>
+			</TextBlock>
+			<TextBlock OpacityMask="{x:Null}" Margin="33,59,38,22" TextWrapping="Wrap" x:Name="downT" FontSize="100" Text="19" TextAlignment="Center" >
+				<TextBlock.Foreground>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FFBABABA"/>
+						<GradientStop Color="#FF0E0E0E" Offset="1"/>
+					</LinearGradientBrush>
+				</TextBlock.Foreground>
+			</TextBlock>
+			<TextBlock OpacityMask="{x:Null}" Margin="30,56,41,25" TextWrapping="Wrap" x:Name="calT" FontSize="100" Text="19" TextAlignment="Center" >
+				<TextBlock.Foreground>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FF003366"/>
+						<GradientStop Color="#FF0099cc" Offset="1"/>
+					</LinearGradientBrush>
+				</TextBlock.Foreground>
+			</TextBlock>
+			<TextBlock Height="32" Margin="11,16.334,-21.5,0" VerticalAlignment="Top" Text="2008-03  Thursday" TextWrapping="Wrap" Foreground="#FFFFFFFF" FontSize="18" x:Name="strTXT" TextAlignment="Left"/>
+		</Grid>
+	</Grid>
+</UserControl>

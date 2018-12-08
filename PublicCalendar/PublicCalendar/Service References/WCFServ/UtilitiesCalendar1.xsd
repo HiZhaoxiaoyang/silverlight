@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ezhao013.cn.asia.ad.pwcinternal.com/PublicCalendar.Web/UtilitiesCalendar.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" />
+  <xs:element name="DoWork">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DoWorkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DoWorkResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCalendar">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCalendarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" minOccurs="0" name="GetCalendarResult" nillable="true" type="q1:ArrayOfCalendar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePublicDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" minOccurs="0" name="cal" nillable="true" type="q2:Calendar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePublicDateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyCN">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyCNResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" minOccurs="0" name="GetDailyCNResult" nillable="true" type="q3:ArrayOfDailyOTRate_CN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyHK">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyHKResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" minOccurs="0" name="GetDailyHKResult" nillable="true" type="q4:ArrayOfDailyOTRate_HK" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyMA">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyMAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" minOccurs="0" name="GetDailyMAResult" nillable="true" type="q5:ArrayOfDailyOTRate_MA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" minOccurs="0" name="dcn" nillable="true" type="q6:DailyOTRate_CN" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" minOccurs="0" name="dhk" nillable="true" type="q7:DailyOTRate_HK" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/PublicCalendar.Web" minOccurs="0" name="dma" nillable="true" type="q8:DailyOTRate_MA" />
+        <xs:element minOccurs="0" name="amend" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTableResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

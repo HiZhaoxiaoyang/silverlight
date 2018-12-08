@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="Utilities" Class="DataClassesDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=10.157.21.15,1800;Initial Catalog=Utilities;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="UtilitiesConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Calendar" Member="Calendars">
+    <Type Name="Calendar">
+      <Column Name="CountryCode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="[Desc]" Member="Desc" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PH" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="Calendar_Calendar" Member="Calendars" ThisKey="CountryCode,Date,Desc,PH" OtherKey="CountryCode,Date,Desc,PH" Type="Calendar" />
+      <Association Name="Calendar_Calendar" Member="Calendar1" ThisKey="CountryCode,Date,Desc,PH" OtherKey="CountryCode,Date,Desc,PH" Type="Calendar" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DailyOTRate_CN" Member="DailyOTRate_CNs">
+    <Type Name="DailyOTRate_CN">
+      <Column Name="WorkDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="WeekDay" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="WorkHours" Type="System.Decimal" DbType="Decimal(3,1) NOT NULL" CanBeNull="false" />
+      <Column Name="OTRate" Type="System.String" DbType="Char(5)" CanBeNull="true" />
+      <Column Name="HolidayFlag" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="DateStatus" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Remarks" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Association Name="DailyOTRate_CN_DailyOTRate_CN" Member="DailyOTRate_CNs" ThisKey="WorkDate" OtherKey="WorkDate" Type="DailyOTRate_CN" />
+      <Association Name="DailyOTRate_CN_DailyOTRate_CN" Member="DailyOTRate_CN1" ThisKey="WorkDate" OtherKey="WorkDate" Type="DailyOTRate_CN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DailyOTRate_MA" Member="DailyOTRate_MAs">
+    <Type Name="DailyOTRate_MA">
+      <Column Name="WorkDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="WeekDay" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="WorkHours" Type="System.Decimal" DbType="Decimal(3,1) NOT NULL" CanBeNull="false" />
+      <Column Name="OTRate" Type="System.String" DbType="Char(5)" CanBeNull="true" />
+      <Column Name="HolidayFlag" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="DateStatus" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Remarks" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Association Name="DailyOTRate_MA_DailyOTRate_MA" Member="DailyOTRate_MAs" ThisKey="WorkDate" OtherKey="WorkDate" Type="DailyOTRate_MA" />
+      <Association Name="DailyOTRate_MA_DailyOTRate_MA" Member="DailyOTRate_MA1" ThisKey="WorkDate" OtherKey="WorkDate" Type="DailyOTRate_MA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DailyOTRate_HK" Member="DailyOTRate_HKs">
+    <Type Name="DailyOTRate_HK">
+      <Column Name="WorkDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="WeekDay" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="WorkHours" Type="System.Decimal" DbType="Decimal(3,1) NOT NULL" CanBeNull="false" />
+      <Column Name="OTRate" Type="System.String" DbType="Char(5)" CanBeNull="true" />
+      <Column Name="HolidayFlag" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="DateStatus" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Remarks" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Association Name="DailyOTRate_HK_DailyOTRate_HK" Member="DailyOTRate_HKs" ThisKey="WorkDate" OtherKey="WorkDate" Type="DailyOTRate_HK" />
+      <Association Name="DailyOTRate_HK_DailyOTRate_HK" Member="DailyOTRate_HK1" ThisKey="WorkDate" OtherKey="WorkDate" Type="DailyOTRate_HK" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

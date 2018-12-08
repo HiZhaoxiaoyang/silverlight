@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a5a1e276-5821-4dc6-a946-f560ac6b5f78" absoluteBounds="0.5, 0.75, 2, 1.424847819010417">
+      <DataClassMoniker Name="/DataClassesDataContext/Calendar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69437b23-5f81-46e8-9cbb-0d07bdbc35d9" absoluteBounds="0.51500000000000012, 1.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.19993984938401 : 2.17484781901042); (1.19993984938401 : 2.42484781901042); (1.81434872921675 : 2.42484781901042); (1.81434872921675 : 2.17484781901042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/Calendar/Calendar_Calendar" />
+      <nodes>
+        <classShapeMoniker Id="a5a1e276-5821-4dc6-a946-f560ac6b5f78" />
+        <classShapeMoniker Id="a5a1e276-5821-4dc6-a946-f560ac6b5f78" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5f2bf259-d3cf-4135-a308-6f4ac82aec42" absoluteBounds="3.75, 0.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/DataClassesDataContext/DailyOTRate_CN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae85e292-2d00-4075-9661-84830f0e72b3" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0963b7c4-b47f-4fba-8ed6-8d7b499764e4" absoluteBounds="0.75, 3.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/DataClassesDataContext/DailyOTRate_MA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c2997a8-856a-4d80-86d0-5220b3def388" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5bd7e39e-bbb9-4b09-b88b-6e31e61d9032" absoluteBounds="3.75, 3.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/DataClassesDataContext/DailyOTRate_HK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a27532c8-9116-4ac4-b251-a686ed76ebfe" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.4579043738732 : 2.66788981119792); (4.4579043738732 : 2.91788981119792); (5.05600494165665 : 2.91788981119792); (5.05600494165665 : 2.66788981119792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/DailyOTRate_CN/DailyOTRate_CN_DailyOTRate_CN" />
+      <nodes>
+        <classShapeMoniker Id="5f2bf259-d3cf-4135-a308-6f4ac82aec42" />
+        <classShapeMoniker Id="5f2bf259-d3cf-4135-a308-6f4ac82aec42" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.4579043738732 : 5.66788981119792); (1.4579043738732 : 5.91788981119792); (2.05600494165665 : 5.91788981119792); (2.05600494165665 : 5.66788981119792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/DailyOTRate_MA/DailyOTRate_MA_DailyOTRate_MA" />
+      <nodes>
+        <classShapeMoniker Id="0963b7c4-b47f-4fba-8ed6-8d7b499764e4" />
+        <classShapeMoniker Id="0963b7c4-b47f-4fba-8ed6-8d7b499764e4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.4579043738732 : 5.66788981119792); (4.4579043738732 : 5.91788981119792); (5.05600494165665 : 5.91788981119792); (5.05600494165665 : 5.66788981119792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/DailyOTRate_HK/DailyOTRate_HK_DailyOTRate_HK" />
+      <nodes>
+        <classShapeMoniker Id="5bd7e39e-bbb9-4b09-b88b-6e31e61d9032" />
+        <classShapeMoniker Id="5bd7e39e-bbb9-4b09-b88b-6e31e61d9032" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
